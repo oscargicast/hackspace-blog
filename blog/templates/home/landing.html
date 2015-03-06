@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	Este es mi blog
+	{% for post in posts %}
+		<h1>{{ post.titulo }}</h1>
+		<h3>{{ post.autor.first_name|title }}</h3>
+		<hr>
+		<p>{{ post.cuerpo }}</p>
+	{% endfor %}
+</body>
+</html>
